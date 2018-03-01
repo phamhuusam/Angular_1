@@ -3,5 +3,8 @@
     {{todo.title}}
     <input type="checkbox" name="tc" [(ngModel)]="todo.isComplete" [value]="todo.title"  >
 </p>
-<input type="text" [(ngModel)] = "txtTitle" />
-<button (click)="addTask()"> xxx</button>
+
+<div class="form-group">  
+    <input class="form-control" [(ngModel)] = "txtTitle"  type="text">
+</div>
+<button class="btn btn-primary btn-sm" (click)="addTask()"> xxx</button>
