@@ -1,1 +1,7 @@
-pham huu sam
+
+<p *ngFor='let todo of ts.list'>
+    {{todo.title}}
+    <input type="checkbox" name="tc" [(ngModel)]="todo.isComplete" [value]="todo.title"  >
+</p>
+<input type="text" [(ngModel)] = "txtTitle" />
+<button (click)="addTask()"> xxx</button>
